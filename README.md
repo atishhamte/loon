@@ -70,13 +70,7 @@ const prompt = `Context: ${encode(context)}\n\nQuestion: Summarize the conversat
 **JSON.stringify (minified):**
 
 ```json
-{
-  "users": [
-    { "id": 1, "name": "Alice", "role": "admin" },
-    { "id": 2, "name": "Bob", "role": "user" },
-    { "id": 3, "name": "Charlie", "role": "user" }
-  ]
-}
+{"users":[{"id":1,"name":"Alice","role":"admin"},{"id":2,"name":"Bob","role":"user"},{"id":3,"name":"Charlie","role":"user"}]}
 ```
 
 **126 characters**
