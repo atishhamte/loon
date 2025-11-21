@@ -1,5 +1,5 @@
 {
-  "name": "loon",
+  "name": "@atishhamte/loon",
   "version": "1.0.0",
   "description": "LOON (LLM Optimised Object Notations) - An encoder-only library that reduces token consumption by ~40-50% compared to minified JSON through schema optimization and intelligent formatting",
   "main": "dist/index.js",
