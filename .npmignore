@@ -1,0 +1,32 @@
+# Source files
+src/
+tests/
+scripts/
+
+# Configuration files
+tsconfig.json
+vitest.config.ts
+.eslintrc.json
+.prettierrc.json
+
+# CI/CD
+.github/
+
+# Development files
+*.log
+.DS_Store
+.env
+.vscode/
+.idea/
+
+# Build artifacts
+dist-esm/
+coverage/
+
+# Documentation (keep README, LICENSE, CONTRIBUTING)
+.kiro/
+explaination.txt
+
+# Git
+.git/
+.gitignore

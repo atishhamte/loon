@@ -1,0 +1,69 @@
+{
+  "name": "loon",
+  "version": "1.0.0",
+  "description": "LOON (LLM Optimised Object Notations) - An encoder-only library that reduces token consumption by ~40-50% compared to minified JSON through schema optimization and intelligent formatting",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:types",
+    "build:cjs": "tsc --module commonjs --outDir dist",
+    "build:esm": "tsc --module esnext --outDir dist-esm && node scripts/rename-esm.js",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\""
+  },
+  "keywords": [
+    "loon",
+    "encoder",
+    "llm",
+    "json",
+    "token-optimization",
+    "encoding",
+    "compression",
+    "ai",
+    "gpt",
+    "language-model",
+    "data-format",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atishhamte/loon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atishhamte/loon/issues"
+  },
+  "homepage": "https://github.com/atishhamte/loon#readme",
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
